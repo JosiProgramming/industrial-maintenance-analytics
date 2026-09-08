@@ -32,15 +32,6 @@ The analysis focuses on:
 | DAX | Interactive maintenance KPIs |
 | Git / GitHub | Version control and project documentation |
 
-
-Measures the proportion of planned production time in which the equipment was operational.
-
-### MTBF — Mean Time Between Failures
-
-### MTTR — Mean Time To Repair
-
-Measures the average time required to restore equipment after a failure.
-
 ## Asset Risk Score
 
 A custom analytical **Asset Risk Score** was developed to prioritize equipment requiring greater maintenance attention.
@@ -93,7 +84,6 @@ The synthetic industrial environment contains:
 - Failure categories
 - Labor and material maintenance costs
 - Equipment operating and downtime hours
-
 
 ## Author
 
