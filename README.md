@@ -115,19 +115,19 @@ The Power BI report is divided into three analytical views.
 
 Provides an executive overview of maintenance performance, including failures, downtime, maintenance costs and availability.
 
-![Maintenance Overview](dashboard/screenshots/maintenance_overview.png)
+![Maintenance Overview](dashboard/screenshots/maintenance_overview.jpg)
 
 ### Equipment Reliability
 
 Focuses on equipment reliability through MTBF, MTTR, failure categories and monthly downtime behavior.
 
-![Equipment Reliability](dashboard/screenshots/equipment_reliability.png)
+![Equipment Reliability](dashboard/screenshots/equipment_reliability.jpg)
 
 ### Asset Risk Analysis
 
 Prioritizes industrial assets according to their calculated risk score and supporting reliability indicators.
 
-![Asset Risk Analysis](dashboard/screenshots/asset_risk_analysis.png)
+![Asset Risk Analysis](dashboard/screenshots/asset_risk_analysis.jpg)
 
 ---
 
