@@ -18,32 +18,6 @@ The analysis focuses on:
 - MTTR (Mean Time To Repair)
 - Asset risk prioritization
 
-The dataset used in this project is **synthetically generated** for educational and portfolio purposes.
-
----
-
-## Analytics Pipeline
-
-```text
-Equipment Master Data
-        ↓
-Synthetic Data Generation
-        ↓
-      Python
-        ↓
-Data Validation & Processing
-        ↓
- ┌──────────────┬──────────────┐
- ↓              ↓              ↓
-SQLite          CSV        KPI Analysis
- ↓              ↓              ↓
-SQL Queries ─────────────→ Power BI
-                         ↓
-                  Maintenance Dashboard
-```
-
----
-
 ## Technologies
 
 | Technology | Application |
@@ -58,35 +32,14 @@ SQL Queries ─────────────→ Power BI
 | DAX | Interactive maintenance KPIs |
 | Git / GitHub | Version control and project documentation |
 
----
-
-## Maintenance KPIs
-
-### Availability
 
 Measures the proportion of planned production time in which the equipment was operational.
 
-```text
-Availability = Operating Hours / Planned Hours
-```
-
 ### MTBF — Mean Time Between Failures
-
-Indicates the average operating time between equipment failures.
-
-```text
-MTBF = Operating Hours / Number of Failures
-```
 
 ### MTTR — Mean Time To Repair
 
 Measures the average time required to restore equipment after a failure.
-
-```text
-MTTR = Corrective Downtime / Number of Failures
-```
-
----
 
 ## Asset Risk Score
 
@@ -105,7 +58,6 @@ Each component is normalized to a 0–100 scale before weighting.
 
 > The weighting model is a project-defined analytical methodology and is not intended to represent a universal maintenance standard.
 
----
 
 ## Power BI Dashboard
 
@@ -129,45 +81,6 @@ Prioritizes industrial assets according to their calculated risk score and suppo
 
 ![Asset Risk Analysis](dashboard/screenshots/asset_risk_analysis.jpg)
 
----
-
-## Project Structure
-
-```text
-industrial-maintenance-analytics/
-│
-├── data/
-│   ├── raw/
-│   │   └── industrial_maintenance_data.xlsx
-│   └── processed/
-│       ├── equipment_kpis.csv
-│       └── asset_risk_ranking.csv
-│
-├── database/
-│   └── maintenance.db
-│
-├── dashboard/
-│   ├── industrial_maintenance_dashboard.pbix
-│   └── screenshots/
-│       ├── maintenance_overview.png
-│       ├── equipment_reliability.png
-│       └── asset_risk_analysis.png
-│
-├── source/
-│   ├── load_data.py
-│   ├── generate_synthetic_data.py
-│   ├── calculate_kpis.py
-│   ├── create_database.py
-│   └── run_sql.py
-│
-├── sql/
-│   ├── 01_basic_queries.sql
-│   └── 02_maintenance_kpis.sql
-│
-└── README.md
-```
-
----
 
 ## Dataset
 
@@ -181,19 +94,6 @@ The synthetic industrial environment contains:
 - Labor and material maintenance costs
 - Equipment operating and downtime hours
 
-A fixed random seed is used to make the synthetic dataset reproducible.
-
----
-
-## Key Project Concepts
-
-This project demonstrates the integration of:
-
-**Industrial Maintenance → Reliability Engineering → Data Analytics → Business Intelligence**
-
-Rather than analyzing maintenance data only through visualization, the project implements the complete data workflow from synthetic data generation and database creation to KPI calculation and interactive reporting.
-
----
 
 ## Author
 
